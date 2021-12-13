@@ -26,7 +26,7 @@ const optionDefinitions = [
   {name: "valid-from-date", type: String},
   {name: "valid-to-date", type: String},
   {name: "maximum-daily-amount", type: Number},
-  {name: "maxiumum-monthly-amount", type: Number},
+  {name: "maximum-monthly-amount", type: Number},
   {name: "maximum-amount", type: Number},
   {name: "currency", defaultValue: "GBP", type: String},
   {name: "context", alias: "c", type: String},
@@ -63,9 +63,9 @@ const start = async () => {
       })
     }
 
-    if (options["maxiumum-monthly-amount"]) {
+    if (options["maximum-monthly-amount"]) {
       periodicLimits.push({
-        amount: options["maxiumum-monthly-amount"],
+        amount: options["maximum-monthly-amount"],
         currency: options.currency,
         periodType: "Month",
       })
