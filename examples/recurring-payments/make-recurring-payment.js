@@ -16,7 +16,7 @@ const optionDefinitions = [
   {name: "payee-id", alias: "p", type: String, description: "required"},
   {name: "payee-type", type: String},
   {name: "context", alias: "c", type: String},
-  {name: "amount", alias: "a", defaultValue: 100, description: "required"},
+  {name: "amount", alias: "a", description: "required"},
   {
     name: "payee-ref",
     alias: "e",
