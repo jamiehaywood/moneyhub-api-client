@@ -12,7 +12,7 @@ const optionDefinitions = [
     type: String,
     description: "required",
   },
-  {name: "payee-id", alias: "p", type: String, description: "required"},
+  {name: "payee-id", alias: "p", type: String},
   {name: "payee-type", type: String},
   {name: "payer-id", type: String},
   {name: "payer-type", type: String},
