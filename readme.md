@@ -1355,16 +1355,16 @@ const url = await moneyhub.getRecurringPaymentAuthorizeUrl({
       amount: "The maximum amount for this recurring payment limit", // the valid in whole minor units (i.e. pence)
       currency: "The currency code for this recurring payment limit [GBP]",
       periodType: "The period over which the limit is effective [Day, Week, Fortnight, Month, Half-year, Year]",
-      periodAlignment: "Specifies whether the period starts on the date of consent creation or lines up with a calendar [Consent, Calendar]",
-      type: [ 
-        "Sweeping", // Specifies that the recurring payment is for the purpose of sweeping payments
-        "Other" // Specifies that the recurring payment is for other payments of another purpose
-      ]      
+      periodAlignment: "Specifies whether the period starts on the date of consent creation or lines up with a calendar [Consent, Calendar]",   
     }
   ],
+  type: [ 
+    "Sweeping", // Specifies that the recurring payment is for the purpose of sweeping payments
+    "Other" // Specifies that the recurring payment is for other payments of another purpose
+  ],
+  context: "Payment context [Other,BillPayment,PartyToParty]", // optional - defaults to PartyToParty
   state: "your state value",
   nonce: "your nonce value", // optional
-  context: "Payment context [Other,BillPayment,PartyToParty]", // optional - defaults to PartyToParty
   claims: claimsObject, // optional
 })
 
